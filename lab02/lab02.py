@@ -78,11 +78,25 @@ wolne_miejsca = wszystkie_miejsca - liczba_osob
 print(wolne_miejsca)
 '''
 
-# Zadanie 6 // wychodzi ujemna liczba, kiedy się wszystko od siebie odejmie!
-#lczb_fig_dal, lczb_pies_czarny_prawe_ucho, lczb_pies_czarny_lewe_ucho, lczb_pies_białe_uszy = input().split()
-#lczb_fig_dal, lczb_pies_czarny_prawe_ucho, lczb_pies_czarny_lewe_ucho, lczb_pies_białe_uszy = int(lczb_fig_dal), int(lczb_pies_czarny_prawe_ucho), int(lczb_pies_czarny_lewe_ucho), int(lczb_pies_białe_uszy)
+# Zadanie 6
+'''
+liczba, czarnyPrawe, czarnyLewe, biale = input().split()
+liczba, czarnyPrawe, czarnyLewe, biale = int(liczba), int(czarnyPrawe), int(czarnyLewe), int(biale)
 
-# Zadanie 7 - nie wiem jak matematycznie to rozwiązać!
+x = czarnyPrawe + czarnyLewe + biale - liczba
+
+print(x)
+'''
+
+# Zadanie 7
+'''
+u, n, s = input().split()
+u, n, s = int(u), int(n), int(s)
+
+wynik = 2*s/(u+2*n)
+
+print(format(wynik, ".2f"))
+'''
 
 # Zadanie 8
 '''
