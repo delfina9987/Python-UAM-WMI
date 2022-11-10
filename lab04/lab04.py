@@ -72,7 +72,7 @@ while a >= 0:
 print(f"{sum/count:.3f}")
 '''
 
-# Zadanie 5     WYSŁAĆ MAILA DO PROWADZĄCEJ Z PYTANIEM W TEJ SPRAWIE
+# Zadanie 5 
 '''
 sum = 0
 count = 0
