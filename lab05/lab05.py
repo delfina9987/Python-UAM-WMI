@@ -1,5 +1,4 @@
 # procedura coś robi, funkcja coś oblicza
-# Zadania do zrobienia: 12, 13, 18
 
 # przykład
 '''
@@ -154,14 +153,33 @@ print(f"Podana odległość, ale wyrazona w km: {show:.3f}")
 '''
 
 # Zadanie 12
-#def godzina(h,m):
- #   h,m = int(h), int(m)
-  #  return h,m
+'''
+def hour(h,m):
+    minutes = m+35
+    if minutes > 59:
+        minutes -= 60
+        hour = (22 + h)%24
+    else:
+        hour = (21 + h)%24
+    go = str(hour).rjust(2,'0')
+    return f"{go}:{minutes:02d}"
 
-#print('Podaj czas - liczbę godzin oraz minut oddzielone od siebie dwukropkiem:')
-#print(godzina(input().split(':'), input()))
+h,m = input().split(':')
+h,m = int(h),int(m)
+print(hour(h,m))
+'''
 
 # Zadanie 13
+'''
+def godz_nj(g):
+    nj = (g-6)%24
+    return nj
+
+g,m = input("Podaj czas w Warszawie (hh:mm): ").split(':')
+g = int(g)
+h = godz_nj(g)
+print(f"{h:02d}:{m.rjust(2,'0')}")
+'''
 
 # Zadanie 14
 '''
@@ -227,6 +245,21 @@ print(show)
 '''
 
 # Zadanie 18
+'''
+def zeroCount(tab):
+    count = 0
+    for n in tab:
+        if n == 0:
+            count += 1
+    return count
+
+def zeroCount2(tab):
+    return tab.count(0)
+
+tab = [7,0,55,4,9,0,3,2,0,0,0,4]
+print(zeroCount(tab))
+print(zeroCount2(tab))
+'''
 
 # Zadanie 19
 '''
@@ -361,4 +394,14 @@ even = lambda num: num%2==0
 
 print('Podaj liczbę:')
 print(even(int(input())))
+'''
+
+# Zadanie 27 inaczej
+'''
+czy_pa = lambda a: True if a%2 == 0 else False
+czy_pa2 = lambda a: a%2 == 0
+
+print(czy_pa(0), czy_pa2(0))
+print(czy_pa(8), czy_pa2(8))
+print(czy_pa(5), czy_pa2(5))
 '''
