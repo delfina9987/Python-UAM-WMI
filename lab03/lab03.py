@@ -311,14 +311,27 @@ for i in range(a):
     print()
 '''
 
-# Zadanie 24 ZROBIĆ
-#x,y = input().split(',')
-#x,y = int(x), int(y)
+# Zadanie 24
+'''
+a, b = input().split(',')
+a = int(a)
+b = int(b)
 
-#for i in range(x,y+1):
-#    print(i)
+dane = input().split(';')
 
+wynik = 0
 
+for x in dane:
+    x = int(x)
+    if x < a:
+        wynik += a-x
+    elif x > b:
+        wynik += x-b
+    else:
+        wynik = 0
+
+print(wynik)
+'''
 
 # Zadanie 25
 '''
@@ -385,4 +398,30 @@ for i in range(0,1):
     print(' ' + '@' * 5 + ' ')
 for i in range(0,1):
     print('@' * 7)
+'''
+
+# Zadanie 26 inaczej
+'''
+for i in range(5):
+    print(i*' ', '@'*(9 - 2*i), sep='')
+
+print()
+
+for i in range(4):
+    print(2*'@')
+for i in range(2):
+    print(6*'@')
+
+print()
+
+print(6*'@')
+for i in range(5):
+    print('  @@')
+
+print()
+
+for i in range(4):
+    print(i*' ', '@'*(7 - 2*i), sep='')
+for i in range(3, -1, -1):
+    print(i*' ', '@'*(7 - 2*i), sep='')
 '''
