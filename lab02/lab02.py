@@ -181,7 +181,19 @@ else:
     print('NIE')
 '''
 
-# Zadanie 15 - DO ZROBIENIA!
+# Zadanie 15
+'''
+n, znak = input().split()
+n = int(n)
+bialych = n*n//2
+if znak == 'b':
+    print(bialych)
+else:
+    if n%2==0:
+        print(bialych)
+    else:
+        print(bialych+1)
+'''
 
 # Zadanie 16
 '''
@@ -312,14 +324,22 @@ else:
 '''
 
 # Zadanie 26
-#year1, month1, day1 = input().split()
-#year1, month1, day1 = int(year1), int(month1), int(day1)
-#year2, month2, day2 = input().split()
-#year2, month2, day2 = int(year2), int(month2), int(day2)
-
-#if year1-year2 == 18 and month1 == month2 and day1 == day2:
-#    print('wszystkiego najlepszego') 
-#elif year1-year2 >= 18:
-#    print('TAK')
-#else:
-#    print('NIE')
+'''
+r,m,d = input().split()
+r,m,d = int(r),int(m),int(d)
+ru,mu,du = input().split()
+ru,mu,du = int(ru),int(mu),int(du)
+if r-ru>18:
+    print('TAK')
+elif r-ru == 18:
+    if mu<m: print('TAK')
+    elif mu>m:
+        print('NIE', mu-m)
+    else:
+        if du<d: print('TAK')
+        elif du>d: print('NIE',0)
+        else: print("Wszystkiego najlepszego!")
+else:
+    ile = (ru+18-r)*12 + mu-m
+    print("NIE", ile)
+'''
