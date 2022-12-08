@@ -135,8 +135,11 @@ print(km*mila, 'km')
 '''
 
 # Zadanie 19
-#t = int(input()) #czas przejazdu pociągu  godzinach
-
+'''
+t = int(input())
+g = (21 + t)%24
+print(g)
+'''
 
 # Zadanie 20
 '''
