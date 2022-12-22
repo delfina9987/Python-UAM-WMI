@@ -1,0 +1,20 @@
+AAA
+lll
+aaa
+   
+mmm
+aaa
+   
+kkk
+ooo
+ttt
+aaa
+
+dowolny tekst1589
+2.654
+[4, 's', 287]
+Olaf
+1589
+2.654
+[4, 's', 287]
+Olaf
